@@ -8,5 +8,10 @@ export default {
       type: "string",
       title: "Name",
     },
+    {
+      name: "headshot",
+      type: "image",
+      title: "Headshot",
+    },
   ],
 };
