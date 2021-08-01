@@ -1,7 +1,8 @@
 {
   "root": true,
   "project": {
-    "name": "Galleria"
+    "name": "Galleria",
+    "basePath" : "/backend"
   },
   "api": {
     "projectId": "wb725ym6",
