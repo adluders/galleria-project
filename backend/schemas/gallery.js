@@ -34,7 +34,7 @@ export default {
       type: "slug",
       title: "Slug",
       options: {
-        source: "title",
+        source: "name",
       },
     },
     {
