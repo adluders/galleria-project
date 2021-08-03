@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Baskerville", serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.layout {
+  max-width: 94%;
+  margin: 2.5rem auto;
+}
+
+.start-btn {
+  background: transparent;
+  color: #7d7d7d;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  color: #000;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
