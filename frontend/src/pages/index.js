@@ -6,6 +6,7 @@ import Layout from "../components/Layout";
 const IndexPage = ({ data }) => {
   return (
     <Layout>
+      <title> Galleria </title>
       <section className="gallery">
         {data.allSanityGallery.nodes.map(gallery => (
           <GalleryItem key={gallery.id} gallery={gallery} />
