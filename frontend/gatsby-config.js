@@ -1,5 +1,5 @@
 require("dotenv").config({
-  path: `env.${process.env.NODE_ENV}`,
+  path: `.env.${process.env.NODE_ENV}`,
 });
 
 module.exports = {
@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: "gatsby-source-sanity",
       options: {
-        projectId: process.env.PRODUCT_ID,
+        projectId: process.env.PROJECT_ID,
         dataset: "production",
       },
     },
