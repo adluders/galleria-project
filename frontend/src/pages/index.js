@@ -33,7 +33,7 @@ export const indexData = graphql`
         }
         thumbnail {
           asset {
-            url
+            gatsbyImageData
           }
         }
       }

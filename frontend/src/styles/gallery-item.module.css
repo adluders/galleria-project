@@ -1,3 +1,18 @@
 .gallery {
-  border: solid red;
+  position: relative;
+  height: max-content;
+}
+
+.text {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  padding: 2rem;
+}
+
+.text p {
+  padding-top: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
 }
