@@ -10,6 +10,15 @@ exports.createPages = async ({ graphql, actions }) => {
           slug {
             current
           }
+          artist {
+            name
+          }
+          thumbnail {
+            asset {
+              gatsbyImageData
+            }
+          }
+          id
           source
           year
           description
