@@ -42,5 +42,20 @@ export default {
       type: "image",
       title: "Thumbnail",
     },
+    {
+      name: "smallHero",
+      type: "image",
+      title: "Small Hero",
+    },
+    {
+      name: "largeHero",
+      type: "image",
+      title: "Large Hero",
+    },
+    {
+      name: "gallery",
+      type: "image",
+      title: "Gallery",
+    },
   ],
 };
