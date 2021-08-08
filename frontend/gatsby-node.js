@@ -12,8 +12,28 @@ exports.createPages = async ({ graphql, actions }) => {
           }
           artist {
             name
+            headshot {
+              asset {
+                gatsbyImageData
+              }
+            }
           }
           thumbnail {
+            asset {
+              gatsbyImageData
+            }
+          }
+          smallHero {
+            asset {
+              gatsbyImageData
+            }
+          }
+          largeHero {
+            asset {
+              gatsbyImageData
+            }
+          }
+          gallery {
             asset {
               gatsbyImageData
             }

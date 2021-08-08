@@ -1,4 +1,46 @@
 .galleryDetails {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.galleryInfo {
+  border: solid red;
+  position: relative;
+}
+
+.artistInfo {
+  position: absolute;
+  top: 0;
+  /* right: -50px; */
+  /* width: 445px; */
+
+  background-color: #fff;
+  padding: 1rem;
+  word-wrap: break-word;
+}
+
+.artistInfo h1 {
+  font-size: 3.5rem;
+}
+
+.blurb {
+  border: solid black;
+  /* position: relative; */
+}
+
+.blurb h2 {
+  font-size: 12.5rem;
+  color: #f3f3f3;
+}
+
+.blurb p {
+  border: solid orange;
+  width: 80%;
+  /* position: absolute; */
+  top: 18%;
+}
+
+.blurb a {
+  margin-top: auto;
 }
