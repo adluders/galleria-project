@@ -5,28 +5,64 @@
 }
 
 .galleryInfo {
-  border: solid red;
+  display: flex;
+  flex-direction: column;
   position: relative;
+}
+
+.hero {
+  max-width: 70%;
+  position: relative;
+}
+
+.viewImage {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+}
+
+.viewImage .gatsby-image-wrapper {
+  margin-right: 10px;
+}
+
+.viewImage:hover {
+  background-color: rgba(151, 151, 151, 0.7);
 }
 
 .artistInfo {
   position: absolute;
   top: 0;
-  /* right: -50px; */
-  /* width: 445px; */
+  right: -30px;
+  max-width: 445px;
 
   background-color: #fff;
-  padding: 1rem;
-  word-wrap: break-word;
+  padding: 1rem 4rem 1rem 2rem;
 }
 
 .artistInfo h1 {
   font-size: 3.5rem;
 }
 
+.artistInfo p {
+  margin-top: 0.5rem;
+}
+
+.headshot {
+  display: inline-block;
+  margin-left: auto;
+}
+
 .blurb {
-  border: solid black;
-  /* position: relative; */
+  position: relative;
 }
 
 .blurb h2 {
@@ -35,12 +71,20 @@
 }
 
 .blurb p {
-  border: solid orange;
   width: 80%;
-  /* position: absolute; */
-  top: 18%;
+  position: absolute;
+  top: 25%;
 }
 
 .blurb a {
-  margin-top: auto;
+  text-transform: uppercase;
+  color: #7d7d7d;
+  text-decoration: underline;
+  font-size: 0.6rem;
+  position: absolute;
+  bottom: 25%;
+}
+
+.blurb a:hover {
+  color: #000;
 }

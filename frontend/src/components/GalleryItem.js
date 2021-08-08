@@ -6,6 +6,7 @@ import * as styles from "../styles/gallery-item.module.css";
 const GalleryItem = ({ gallery }) => {
   return (
     <Link to={gallery.slug.current} className={styles.gallery}>
+      <div className={styles.overlay}></div>
       <GatsbyImage
         alt="random text"
         image={gallery.thumbnail.asset.gatsbyImageData}

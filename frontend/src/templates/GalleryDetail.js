@@ -1,25 +1,37 @@
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import Layout from "../components/Layout";
 import * as styles from "../styles/gallery-detail.module.css";
 
 const GalleryDetail = ({ pageContext }) => {
-  const { description, name, source, year, artist, smallHero } = pageContext;
+  const { description, name, source, year, artist, largeHero } = pageContext;
 
   return (
     <Layout>
       <section className={styles.galleryDetails}>
         <div className={styles.galleryInfo}>
-          <GatsbyImage alt={name} image={smallHero.asset.gatsbyImageData} />
+          <div className={styles.hero}>
+            <GatsbyImage alt={name} image={largeHero.asset.gatsbyImageData} />
+            <button className={styles.viewImage}>
+              <StaticImage
+                src="../images/icon-view-image.svg"
+                alt="scale"
+                loading="lazy"
+              />
+              view image
+            </button>
+          </div>
           <div className={styles.artistInfo}>
             <h1> {name} </h1>
             <p> {artist.name} </p>
           </div>
-          <GatsbyImage
-            alt={artist.name}
-            image={artist.headshot.asset.gatsbyImageData}
-            className={styles.artist}
-          />
+          <div className={styles.headshot}>
+            <GatsbyImage
+              alt={artist.name}
+              image={artist.headshot.asset.gatsbyImageData}
+              className={styles.artist}
+            />
+          </div>
         </div>
 
         <div className={styles.blurb}>
